@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://site-dra-maiara.vercel.app"),
   title: "Dra. Maiara | Psicologia Clínica & Neuropsicologia",
   description:
     "Acolhimento especializado para ajudar você a navegar por suas emoções e construir uma vida mais equilibrada e significativa.",
