@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image"; // Importação do componente oficial
+import Image from "next/image";
 
 export default function Hero() {
   const [imgError, setImgError] = useState(false);
@@ -36,35 +36,36 @@ export default function Hero() {
           >
             Um espaço para <br />
             <span className="italic text-[var(--color-gold)] font-normal">
-              florescer
+              compreender
             </span>
             <br />
-            sua melhor versão.
+            seu funcionamento.
           </h1>
 
           <p className="text-lg text-[var(--color-deep-blue)]/80 max-w-md mx-auto md:mx-0 mb-8 leading-relaxed">
-            Acolhimento especializado para ajudar você a navegar por suas
-            emoções e construir uma vida mais equilibrada e significativa.
+            Avaliações criteriosas e acolhimento especializado para ajudar você
+            a navegar por suas emoções e funções cognitivas de forma
+            equilibrada.
           </p>
 
           <div className="flex gap-4 flex-wrap justify-center md:justify-start">
             <a
-              href="https://wa.me/558898022119"
+              href="https://wa.me/5588998022119"
               target="_blank"
               rel="noreferrer"
-              aria-label="Agendar consulta via WhatsApp"
+              aria-label="Agendar avaliação via WhatsApp"
               className="px-8 py-4 rounded-full text-sm font-medium tracking-wide shadow-xl"
               style={{
                 backgroundColor: "var(--color-deep-blue)",
                 color: "var(--color-off-white)",
               }}
             >
-              Agendar Consulta
+              Agendar Avaliação
             </a>
 
             <a
               href="#about"
-              aria-label="Conhecer mais sobre a Dra. Maiara"
+              aria-label="Conhecer mais sobre Maiara Martins"
               className="px-8 py-4 rounded-full text-sm font-medium tracking-wide border"
               style={{
                 borderColor: "rgba(10,10,11,0.06)",
@@ -97,10 +98,10 @@ export default function Hero() {
             {!imgError ? (
               <Image
                 src="/hero-maiara.jpeg"
-                alt="Dra. Maiara"
+                alt="Neuropsicóloga Maiara Martins"
                 fill
-                unoptimized // Garante compatibilidade total com Hostinger
-                priority // Carrega esta imagem com prioridade máxima (LCP)
+                unoptimized
+                priority
                 className="object-cover object-top transition-all duration-700 filter grayscale-[15%] hover:grayscale-0"
                 onError={() => setImgError(true)}
               />
@@ -112,13 +113,13 @@ export default function Hero() {
                 <div className="text-center px-6">
                   <Image
                     src="/maiara-logo.svg"
-                    alt="Logo"
+                    alt="Maiara Martins"
                     width={64}
                     height={64}
                     unoptimized
                   />
                   <p className="mt-4 text-[var(--color-deep-blue)]/80 text-sm">
-                    Dra. Maiara
+                    Maiara Martins
                   </p>
                 </div>
               </div>
@@ -133,7 +134,7 @@ export default function Hero() {
           >
             <Image
               src="/maiara-logo.svg"
-              alt="Logo"
+              alt="Maiara Martins"
               width={40}
               height={40}
               unoptimized

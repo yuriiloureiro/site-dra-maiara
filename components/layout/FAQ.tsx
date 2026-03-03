@@ -5,24 +5,49 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
-    question: "Como funciona a primeira sessão?",
+    question: "O que é a avaliação neuropsicológica?",
     answer:
-      "A primeira sessão é um momento de acolhimento e escuta. Nela, vamos entender suas demandas, alinhar expectativas e explicar como funciona o processo terapêutico de forma personalizada para você.",
+      "A avaliação neuropsicológica é um processo que investiga as funções cognitivas, emocionais e comportamentais de uma pessoa para identificar possíveis déficits ou dificuldades.",
   },
   {
-    question: "Qual a duração e frequência das sessões?",
+    question: "Para quem a avaliação neuropsicológica é indicada?",
     answer:
-      "As sessões individuais têm duração média de 50 minutos. Geralmente, a frequência recomendada é semanal, mas isso pode ser ajustado conforme a necessidade e o momento de cada paciente.",
+      "Ela pode ser realizada por crianças a partir de 7 anos, adolescentes, adultos e idosos que apresentem queixas cognitivas, emocionais ou comportamentais.",
   },
   {
-    question: "Você atende convênios médicos?",
+    question: "Você realiza atendimento de crianças e adolescentes?",
     answer:
-      "Trabalho com atendimento particular, mas emito recibos para que você possa solicitar o reembolso junto ao seu plano de saúde, caso ele ofereça essa modalidade.",
+      "Atendo crianças e adolescentes apenas para Avaliação Neuropsicológica, de forma presencial.",
   },
   {
-    question: "Como é feito o atendimento online?",
+    question: "A avaliação é dolorosa ou invasiva?",
     answer:
-      "O atendimento online é realizado via videochamada em uma plataforma segura e sigilosa. A eficácia é a mesma do presencial, com a conveniência de você estar no conforto do seu ambiente.",
+      "Não. A avaliação neuropsicológica é um processo tranquilo que envolve entrevistas e testes realizados em um ambiente acolhedor e respeitoso.",
+  },
+  {
+    question:
+      "Qual a diferença entre Avaliação Psicológica e Neuropsicológica?",
+    answer:
+      "A avaliação psicológica foca em aspectos emocionais e comportamentais, enquanto a avaliação neuropsicológica investiga o funcionamento do cérebro e das funções cognitivas.",
+  },
+  {
+    question: "Preciso de indicação médica ou encaminhamento?",
+    answer: "Não é necessário encaminhamento médico para realizar a avaliação.",
+  },
+  {
+    question: "A avaliação é confidencial?",
+    answer:
+      "Sim. Todos os dados e resultados são tratados com sigilo e ética profissional.",
+  },
+  {
+    question: "O que é entregue ao final da avaliação?",
+    answer:
+      "É entregue um laudo detalhado com os resultados, conclusões e possíveis encaminhamentos.",
+  },
+  {
+    question: "A avaliação pode ser usada em processos jurídicos?",
+    answer:
+      "Sim. O laudo pode ser utilizado como documento em situações legais, desde que solicitado previamente e com as especificações necessárias.",
   },
 ];
 
@@ -56,7 +81,7 @@ export default function FAQ() {
               key={index}
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
+              transition={{ delay: index * 0.06 }}
               className="border-b border-gold/10"
             >
               <button
@@ -64,6 +89,8 @@ export default function FAQ() {
                   setActiveIndex(activeIndex === index ? null : index)
                 }
                 className="w-full py-6 flex items-center justify-between text-left group"
+                aria-expanded={activeIndex === index}
+                aria-controls={`faq-panel-${index}`}
               >
                 <span className="text-lg font-light text-deep-blue group-hover:text-gold transition-colors duration-300">
                   {faq.question}
@@ -80,10 +107,11 @@ export default function FAQ() {
               <AnimatePresence>
                 {activeIndex === index && (
                   <motion.div
+                    id={`faq-panel-${index}`}
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.3, ease: "easeInOut" }}
+                    transition={{ duration: 0.28, ease: "easeInOut" }}
                     className="overflow-hidden"
                   >
                     <p className="pb-8 text-deep-blue/60 leading-relaxed font-light">

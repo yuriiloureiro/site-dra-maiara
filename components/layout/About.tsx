@@ -21,7 +21,7 @@ export default function About() {
             {/* Imagem otimizada */}
             <Image
               src="/sobre-maiara.jpeg"
-              alt="Dra. Maiara"
+              alt="Maiara Martins"
               fill
               unoptimized // Compatibilidade com Hostinger
               className="relative z-10 object-cover rounded-[2rem] shadow-2xl grayscale-[15%] hover:grayscale-0 transition-all duration-700 border border-[var(--color-gold)]/10"
@@ -53,22 +53,24 @@ export default function About() {
 
           <div className="space-y-4 text-[var(--color-deep-blue)]/80 leading-relaxed text-base sm:text-lg text-center md:text-left">
             <p>
-              Sou a Dra. Maiara, psicóloga clínica dedicada a auxiliar pessoas
-              no processo de autoconhecimento e superação de conflitos.
+              Maiara Martins é Psicóloga e Neuropsicóloga, especialista em
+              Avaliação Neuropsicológica, Avaliação Psicológica e
+              Psicodiagnóstico.
             </p>
             <p>
-              Minha abordagem foca em criar um ambiente seguro e livre de
-              julgamentos, onde cada sessão é um passo em direção à sua melhor
-              versão.
+              Realiza avaliações com crianças, adolescentes, adultos e idosos,
+              conduzindo processos investigativos criteriosos que auxiliam na
+              compreensão do funcionamento cognitivo, emocional e comportamental
+              de forma ética, técnica e individualizada.
             </p>
           </div>
 
           <div className="mt-8 md:mt-10 pt-6 border-t border-[var(--color-gold)]/20 text-center md:text-left">
             <p className="font-serif italic text-[var(--color-deep-blue)] text-lg md:text-xl">
-              Dra. Maiara
+              Maiara Martins
             </p>
             <p className="text-[10px] uppercase tracking-[0.3em] text-[var(--color-gold)] mt-1 font-bold">
-              CRP 11/22919
+              Psicóloga • Neuropsicóloga — CRP 11/22919
             </p>
           </div>
         </motion.div>

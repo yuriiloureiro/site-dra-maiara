@@ -36,7 +36,7 @@ export default function Navbar() {
         >
           <Image
             src="/maiara-logo.svg"
-            alt="Logo Dra. Maiara"
+            alt="Logo Neuropsicóloga Maiara Martins"
             width={45}
             height={45}
             priority
@@ -47,7 +47,7 @@ export default function Navbar() {
             className="hidden sm:block text-[10px] uppercase tracking-[0.3em] font-bold"
             style={{ color: "var(--color-deep-blue)", fontFamily: "serif" }}
           >
-            Dra. Maiara
+            Neuropsicóloga Maiara Martins
           </span>
         </a>
 
@@ -68,7 +68,7 @@ export default function Navbar() {
         {/* Botão Contato + Hamburger */}
         <div className="flex items-center gap-4">
           <a
-            href="https://wa.me/558898022119"
+            href="https://wa.me/5588998022119"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:block px-5 py-2 rounded-full text-[10px] font-bold tracking-widest transition-transform hover:scale-105"
@@ -123,7 +123,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="https://wa.me/558898022119"
+                href="https://wa.me/5588998022119"
                 className="py-3 rounded-full bg-[var(--color-deep-blue)] text-[var(--color-off-white)] text-xs font-bold"
                 onClick={() => setMenuOpen(false)}
               >

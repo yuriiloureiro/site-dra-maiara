@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Instagram } from "lucide-react";
 
 const footerLinks = [
   { name: "Início", href: "#" },
@@ -14,7 +13,7 @@ export default function Footer() {
   return (
     <footer className="w-full py-16 px-6 bg-[var(--color-off-white)] border-t border-[var(--color-gold)]/10">
       <div className="max-w-7xl mx-auto flex flex-col items-center gap-12">
-        {/* Logo e Identidade */}
+        {/* Logo e Identidade Centralizada */}
         <div className="flex flex-col items-center gap-4 text-center">
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -22,7 +21,7 @@ export default function Footer() {
           >
             <Image
               src="/maiara-logo.svg"
-              alt="Logo Dra. Maiara"
+              alt="Logo Maiara Martins"
               width={60}
               height={60}
               unoptimized
@@ -32,17 +31,19 @@ export default function Footer() {
           <div>
             <h3
               className="text-xl font-bold tracking-[0.2em] uppercase"
-              style={{ color: "var(--color-deep-blue)", fontFamily: "serif" }}
+              style={
+                { color: "var(--color-deep-blue)", fontFamily: "serif" } as any
+              }
             >
-              Dra. Maiara
+              Maiara Martins
             </h3>
             <p className="text-[10px] uppercase tracking-[0.4em] text-[var(--color-gold)] mt-1">
-              Psicóloga Clínica
+              Neuropsicóloga
             </p>
           </div>
         </div>
 
-        {/* Links Rápidos */}
+        {/* Links Rápidos de Navegação */}
         <nav className="flex flex-wrap justify-center gap-8">
           {footerLinks.map((link, index) => (
             <a
@@ -56,12 +57,14 @@ export default function Footer() {
           ))}
         </nav>
 
-        {/* Linha Divisória e Copyright */}
-        <div className="w-full pt-8 border-t border-[var(--color-gold)]/5 flex flex-col md:flex-row justify-between items-center gap-4">
+        {/* Linha Divisória e Rodapé Inferior */}
+        <div className="w-full pt-8 border-t border-[var(--color-gold)]/5 flex flex-col md:flex-row justify-between items-center gap-6">
+          {/* Copyright à Esquerda */}
           <p className="text-[9px] uppercase tracking-widest text-[var(--color-deep-blue)]/50">
-            © 2026 Dra. Maiara — Todos os direitos reservados.
+            © 2026 Neuropsicóloga Maiara Martins — Todos os direitos reservados.
           </p>
 
+          {/* Créditos à Direita */}
           <div className="flex items-center gap-2">
             <span className="text-[9px] uppercase tracking-widest text-[var(--color-deep-blue)]/30">
               Desenvolvido por
@@ -73,16 +76,6 @@ export default function Footer() {
               Yuri Loureiro
             </a>
           </div>
-          {/* Instagram */}
-          <a
-            href="https://www.instagram.com/maiaramartins.psi/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram Dra. Maiara"
-            className="text-[var(--color-deep-blue)] hover:text-[var(--color-gold)] transition-colors"
-          >
-            <Instagram size={20} />
-          </a>
         </div>
       </div>
     </footer>
