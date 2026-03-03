@@ -1,152 +1,93 @@
 "use client";
-import { useState } from "react";
-import { motion } from "framer-motion";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Hero() {
-  const [imgError, setImgError] = useState(false);
+  const whatsappUrl = "https://wa.me/5588998022119";
 
   return (
     <section
-      className="relative min-h-screen flex items-center overflow-hidden bg-[var(--color-off-white)]
-                 pt-32 md:pt-20"
+      id="home"
+      className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-[var(--color-off-white)]"
     >
-      {/* Decorativos suaves */}
-      <div className="hidden md:block absolute top-20 -left-24 w-96 h-96 bg-[var(--color-gold)]/6 blur-[72px] rounded-full pointer-events-none" />
-      <div className="hidden md:block absolute bottom-20 -right-24 w-96 h-96 bg-[var(--color-deep-blue)]/6 blur-[72px] rounded-full pointer-events-none" />
-
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full">
-        {/* Texto */}
+      <div className="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+        {/* Conteúdo Esquerdo */}
         <motion.div
-          initial={{ opacity: 0, x: -36 }}
+          initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          className="z-10 text-center md:text-left flex flex-col justify-center"
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="max-w-2xl"
         >
-          <span
-            className="block font-medium tracking-[0.2em] uppercase text-[10px] mb-4"
-            style={{ color: "var(--color-gold)" }}
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
+            className="text-[10px] uppercase tracking-[0.5em] text-[var(--color-gold)] font-bold mb-6 block"
           >
-            Psicologia Clínica & Neuropsicologia
-          </span>
+            Neuropsicologia Clínica
+          </motion.span>
 
           <h1
-            className="text-5xl md:text-6xl font-light leading-[1.05] mb-6"
-            style={{ color: "var(--color-deep-blue)", fontFamily: "serif" }}
+            className="text-5xl md:text-7xl lg:text-8xl font-light leading-[1.1] mb-8"
+            style={
+              { color: "var(--color-deep-blue)", fontFamily: "serif" } as any
+            }
           >
-            Um espaço para <br />
-            <span className="italic text-[var(--color-gold)] font-normal">
-              compreender
+            Antes do diagnóstico, <br />
+            <span className="italic text-[var(--color-gold)]">
+              compreensão.
             </span>
-            <br />
-            seu funcionamento.
           </h1>
 
-          <p className="text-lg text-[var(--color-deep-blue)]/80 max-w-md mx-auto md:mx-0 mb-8 leading-relaxed">
-            Avaliações criteriosas e acolhimento especializado para ajudar você
-            a navegar por suas emoções e funções cognitivas de forma
-            equilibrada.
+          <p className="text-lg md:text-xl text-[var(--color-deep-blue)]/70 mb-10 leading-relaxed font-light max-w-xl">
+            Psicodiagnóstico, Avaliação Psicológica e Neuropsicológica online,
+            conduzidos com rigor técnico, precisão clínica e acolhimento
+            qualificado.
           </p>
 
-          <div className="flex gap-4 flex-wrap justify-center md:justify-start">
-            <a
-              href="https://wa.me/5588998022119"
+          <div className="flex flex-wrap gap-6">
+            <motion.a
+              href={whatsappUrl}
               target="_blank"
-              rel="noreferrer"
-              aria-label="Agendar avaliação via WhatsApp"
-              className="px-8 py-4 rounded-full text-sm font-medium tracking-wide shadow-xl"
-              style={{
-                backgroundColor: "var(--color-deep-blue)",
-                color: "var(--color-off-white)",
-              }}
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-8 py-4 bg-[var(--color-deep-blue)] text-white rounded-full font-bold uppercase tracking-widest text-[10px] transition-all shadow-lg hover:shadow-[var(--color-deep-blue)]/20"
             >
               Agendar Avaliação
-            </a>
-
+            </motion.a>
             <a
               href="#about"
-              aria-label="Conhecer mais sobre Maiara Martins"
-              className="px-8 py-4 rounded-full text-sm font-medium tracking-wide border"
-              style={{
-                borderColor: "rgba(10,10,11,0.06)",
-                color: "var(--color-deep-blue)",
-              }}
+              className="px-8 py-4 border border-[var(--color-deep-blue)]/20 text-[var(--color-deep-blue)] rounded-full font-bold uppercase tracking-widest text-[10px] hover:bg-[var(--color-deep-blue)]/5 transition-all"
             >
               Conhecer mais
             </a>
           </div>
         </motion.div>
 
-        {/* Arte da foto */}
+        {/* Imagem Direita */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.96 }}
+          initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1 }}
-          className="relative flex justify-center md:justify-end"
+          transition={{ duration: 1.2, ease: "easeOut" }}
+          className="relative aspect-[4/5] w-full max-w-[500px] mx-auto lg:ml-auto"
         >
-          <div
-            className="relative z-10
-                       w-[260px] h-[350px]
-                       sm:w-[320px] sm:h-[450px]
-                       md:w-[420px] md:h-[580px]
-                       rounded-[180px_180px_24px_24px] overflow-hidden"
-            style={{
-              boxShadow: "0 20px 40px rgba(10,10,11,0.12)",
-              border: "1px solid rgba(221,185,123,0.24)",
-            }}
-          >
-            {!imgError ? (
-              <Image
-                src="/hero-maiara.jpeg"
-                alt="Neuropsicóloga Maiara Martins"
-                fill
-                unoptimized
-                priority
-                className="object-cover object-top transition-all duration-700 filter grayscale-[15%] hover:grayscale-0"
-                onError={() => setImgError(true)}
-              />
-            ) : (
-              <div
-                className="w-full h-full flex items-center justify-center"
-                style={{ backgroundColor: "rgba(212,255,0,0.06)" }}
-              >
-                <div className="text-center px-6">
-                  <Image
-                    src="/maiara-logo.svg"
-                    alt="Maiara Martins"
-                    width={64}
-                    height={64}
-                    unoptimized
-                  />
-                  <p className="mt-4 text-[var(--color-deep-blue)]/80 text-sm">
-                    Maiara Martins
-                  </p>
-                </div>
-              </div>
-            )}
-          </div>
-
-          {/* Logo flutuante */}
-          <motion.div
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-            className="hidden sm:flex absolute -top-6 -right-6 w-20 h-20 bg-[var(--color-off-white)] rounded-full p-2 shadow-lg border border-[var(--color-gold)]/20 items-center justify-center z-20"
-          >
+          <div className="absolute inset-0 border border-[var(--color-gold)]/20 translate-x-6 translate-y-6 rounded-t-[200px] -z-10" />
+          <div className="relative h-full w-full overflow-hidden rounded-t-[200px] shadow-2xl">
             <Image
-              src="/maiara-logo.svg"
-              alt="Maiara Martins"
-              width={40}
-              height={40}
-              unoptimized
+              src="/maiara-hero.jpg"
+              alt="Maiara Martins - Neuropsicóloga"
+              fill
+              priority
+              className="object-cover"
             />
-          </motion.div>
-
-          <div
-            className="absolute -bottom-6 -left-6 w-full h-full rounded-[180px_180px_24px_24px] -z-10 pointer-events-none"
-            style={{ border: "2px solid rgba(212,255,0,0.06)" }}
-          />
+          </div>
         </motion.div>
       </div>
+
+      {/* Elementos Decorativos de Fundo */}
+      <div className="absolute top-1/4 -right-20 w-96 h-96 bg-[var(--color-gold)]/5 rounded-full blur-3xl -z-10" />
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent -z-10" />
     </section>
   );
 }
