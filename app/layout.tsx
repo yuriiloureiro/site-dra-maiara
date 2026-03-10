@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+// Import do FloatingWhatsApp (import relativo porque components está fora de /app)
+import FloatingWhatsApp from "../components/FloatingWhatsApp";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -28,11 +31,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Dra. Maiara | Psicologia Clínica & Neuropsicologia",
     description: "Um espaço para florescer sua melhor versão.",
-    url: "https://maiaramartins.com.br", // Substitua pelo domínio final depois
+    url: "https://maiaramartins.com.br",
     siteName: "Dra. Maiara",
     images: [
       {
-        url: "/hero-maiara.jpeg", // Imagem que aparecerá no compartilhamento
+        url: "/hero-maiara.jpeg",
         width: 1200,
         height: 630,
         alt: "Dra. Maiara - Psicóloga Clínica",
@@ -58,6 +61,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[var(--color-off-white)]`}
       >
         {children}
+
+        {/* Chamada simples do botão - as configurações agora estão dentro do componente */}
+        <FloatingWhatsApp />
       </body>
     </html>
   );
