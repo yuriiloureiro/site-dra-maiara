@@ -5,10 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const navLinks = [
-  { name: "O Processo", href: "#steps" },
-  { name: "Requisitos", href: "#benefits" },
-  { name: "O que Avaliamos", href: "#diagnostics" },
   { name: "Sobre", href: "#about" },
+  { name: "Requisitos", href: "#benefits" },
+  { name: "Especialidades", href: "#services" }, // aponta para Services
+  { name: "O que Avaliamos", href: "#diagnostics" },
 ];
 
 export default function Navbar() {
@@ -60,7 +60,7 @@ export default function Navbar() {
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="lg:hidden p-2 text-[var(--color-deep-blue)]"
-            aria-label="Abrir menu"
+            aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
           >
