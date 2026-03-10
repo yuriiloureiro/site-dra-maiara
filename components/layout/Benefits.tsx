@@ -1,25 +1,25 @@
 "use client";
-import { ShieldCheck, BookOpen, FileText } from "lucide-react";
+import { UserCheck, Clipboard, FileText } from "lucide-react";
 import { motion } from "framer-motion";
 
 const benefits = [
   {
-    icon: ShieldCheck,
-    title: "Atendimento Humanizado",
+    icon: UserCheck,
+    title: "Atendimento",
     description:
-      "Ambiente acolhedor e livre de julgamentos, focado no cuidado ético e respeitoso com cada paciente.",
+      "Atendimento 100% online, com segurança, flexibilidade e condução ética em todas as etapas do processo avaliativo.",
   },
   {
-    icon: BookOpen,
-    title: "Base Científica",
+    icon: Clipboard,
+    title: "Testagem",
     description:
-      "Avaliações e tratamentos fundamentados em pesquisas atualizadas e técnicas neuropsicológicas reconhecidas.",
+      "Aplicação de testes padrão-ouro para avaliação de atenção, memória, inteligência, funções executivas e demais funções cognitivas.",
   },
   {
     icon: FileText,
-    title: "Laudos Detalhados",
+    title: "Laudo",
     description:
-      "Relatórios claros, completos e personalizados, que auxiliam no diagnóstico e encaminhamentos precisos.",
+      "Emissão de laudos em até 48 horas para demandas específicas, com validade nacional e em conformidade com as normas do CFP.",
   },
 ];
 
@@ -42,7 +42,8 @@ export default function Benefits() {
             className="text-4xl md:text-5xl font-light text-[var(--color-deep-blue)]"
             style={{ fontFamily: "serif" } as any}
           >
-            Por que escolher a <span className="italic">Maiara Martins</span>
+            Avaliação Neuropsicológica{" "}
+            <span className="italic">Especializada</span>
           </motion.h2>
         </div>
 
