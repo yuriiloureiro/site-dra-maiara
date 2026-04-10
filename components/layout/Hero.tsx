@@ -34,9 +34,11 @@ export default function Hero() {
           </h1>
 
           <p className="text-base md:text-lg text-[var(--color-deep-blue)]/70 mb-8 leading-relaxed font-light max-w-md mx-auto lg:mx-0">
-            Psicodiagnóstico, Avaliação Psicológica e Neuropsicológica online,
-            conduzidos com rigor técnico, precisão clínica e acolhimento
-            qualificado.
+            Psicodiagnóstico, Avaliação Psicológica e Neuropsicológica para
+            compreender, com precisão e rigor técnico, dificuldades de atenção,
+            memória, comportamento e sofrimento emocional nos estudos, no
+            trabalho e no cotidiano, oferecendo direcionamento para os próximos
+            passos.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">

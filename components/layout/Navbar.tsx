@@ -8,6 +8,7 @@ const navLinks = [
   { name: "Sobre", href: "#about" },
   { name: "Requisitos", href: "#benefits" },
   { name: "Especialidades", href: "#services" }, // aponta para Services
+  { name: "Etapas", href: "#how-it-works" },
   { name: "O que Avaliamos", href: "#diagnostics" },
 ];
 
@@ -25,7 +26,7 @@ export default function Navbar() {
             aria-label="Ir para a página inicial"
           >
             <Image
-              src="/maiara-logo.png"
+              src="/maiara-logo.svg"
               alt="Logotipo Maiara Martins"
               width={60}
               height={60}

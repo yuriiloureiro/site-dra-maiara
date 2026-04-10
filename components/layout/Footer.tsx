@@ -66,7 +66,10 @@ export default function Footer() {
               Desenvolvido por
             </span>
             <a
-              href="#"
+              href="https://loureiroyuri.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir portfólio de Yuri Loureiro em nova aba"
               className="text-[9px] uppercase tracking-widest font-bold text-[var(--color-deep-blue)]/60 hover:text-[var(--color-gold)] transition-colors"
             >
               Yuri Loureiro

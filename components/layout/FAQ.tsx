@@ -15,14 +15,9 @@ const faqs = [
       "Ela pode ser realizada por crianças a partir de 7 anos, adolescentes, adultos e idosos que apresentem queixas cognitivas, emocionais ou comportamentais.",
   },
   {
-    question: "Você realiza atendimento de crianças e adolescentes?",
+    question: "A avaliação é invasiva?",
     answer:
-      "Atendo crianças e adolescentes apenas para Avaliação Neuropsicológica, de forma presencial.",
-  },
-  {
-    question: "A avaliação é dolorosa ou invasiva?",
-    answer:
-      "Não. A avaliação neuropsicológica é um processo tranquilo que envolve entrevistas e testes realizados em um ambiente acolhedor e respeitoso.",
+      "Não. A avaliação neuropsicológica é um processo ético, não invasivo, sigiloso e conduzido de forma acolhedora. Envolve entrevistas clínicas e a aplicação de testes, tendo foco no bem-estar e no respeito ao paciente em todas as etapas.",
   },
   {
     question:
@@ -32,22 +27,34 @@ const faqs = [
   },
   {
     question: "Preciso de indicação médica ou encaminhamento?",
-    answer: "Não é necessário encaminhamento médico para realizar a avaliação.",
+    answer:
+      "Não é necessário encaminhamento médico. A avaliação pode ser realizada por demanda espontânea (autoencaminhamento) ou por solicitação de profissionais das áreas da saúde, educação ou do contexto jurídico.",
   },
   {
-    question: "A avaliação é confidencial?",
+    question: "O que é entregue na devolutiva ao final da avaliação?",
     answer:
-      "Sim. Todos os dados e resultados são tratados com sigilo e ética profissional.",
-  },
-  {
-    question: "O que é entregue ao final da avaliação?",
-    answer:
-      "É entregue um laudo detalhado com os resultados, conclusões e possíveis encaminhamentos.",
+      "Ao final do processo, é realizada uma sessão devolutiva, acompanhada da entrega do laudo especializado, contendo a análise dos resultados, a integração das informações, além de recomendações e possíveis encaminhamentos.",
   },
   {
     question: "A avaliação pode ser usada em processos jurídicos?",
     answer:
-      "Sim. O laudo pode ser utilizado como documento em situações legais, desde que solicitado previamente e com as especificações necessárias.",
+      "Sim. O laudo psicológico pode ser utilizado como documento técnico em contextos jurídicos, desde que essa finalidade seja previamente informada, permitindo a adequação dos procedimentos às exigências legais e normativas vigentes.",
+  },
+  {
+    question: "Quanto tempo dura o processo de avaliação?",
+    answer:
+      "A duração varia conforme a complexidade da demanda, sendo geralmente realizada em cerca de cinco sessões, incluindo entrevistas, aplicação de testes e devolutiva final com a entrega do laudo detalhado.",
+  },
+  {
+    question: "A avaliação fecha diagnóstico?",
+    answer:
+      "A avaliação contribui significativamente para o processo diagnóstico, oferecendo dados técnicos e fundamentados que auxiliam na confirmação, exclusão ou melhor compreensão de hipóteses diagnósticas.",
+  },
+  {
+    question:
+      "A avaliação inclui orientações e encaminhamentos após o resultado?",
+    answer:
+      "Sim. No dia da entrega do laudo, são fornecidas orientações e encaminhamentos individualizados, com base nas necessidades de cada paciente. Essas orientações podem incluir indicação para acompanhamento psicológico, psiquiátrico, psicopedagógico ou outras intervenções pertinentes.",
   },
 ];
 

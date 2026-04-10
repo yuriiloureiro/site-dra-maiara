@@ -4,17 +4,24 @@ import { motion } from "framer-motion";
 const diagnostics = [
   {
     title: "TDAH",
-    category: "Transtorno do Déficit de Atenção com Hiperatividade",
+    category: "Transtorno do Déficit de Atenção/Hiperatividade",
   },
   { title: "TEA", category: "Transtorno do Espectro Autista" },
-  { title: "TOD", category: "Transtorno Opositor Desafiador" },
+  { title: "TOD", category: "Transtorno Opositivo Desafiador" },
   { title: "Ansiedade", category: "Transtornos de Ansiedade e Pânico" },
-  { title: "Depressão", category: "Transtornos do Humor e Afetivos" },
-  { title: "TOC", category: "Transtorno Obsessivo-Compulsivo" },
-  { title: "Demências", category: "Alzheimer e Comprometimento Cognitivo" },
   {
-    title: "Dificuldades",
-    category: "Transtornos de Aprendizagem (Dislexia, etc)",
+    title: "Vasectomia",
+    category: "Avaliação Psicológica para Procedimento de Esterilização",
+  },
+  { title: "Depressão", category: "Transtornos Depressivos e do Humor" },
+  { title: "Dislexia", category: "Transtornos de Aprendizagem" },
+  { title: "Bipolaridade", category: "Transtorno Bipolar" },
+  { title: "Borderline", category: "Transtorno de Personalidade Borderline" },
+  { title: "TOC", category: "Transtorno Obsessivo-Compulsivo" },
+  { title: "AH/SD", category: "Altas Habilidades/Superdotação" },
+  {
+    title: "Bariátrica",
+    category: "Avaliação Psicológica para Cirurgia Bariátrica",
   },
 ];
 
@@ -38,9 +45,9 @@ export default function Diagnostics() {
               className="text-4xl md:text-6xl font-light leading-tight text-[var(--color-deep-blue)]"
               style={{ fontFamily: "serif" } as any}
             >
-              Destaques dos Principais <br />
+              Principais Serviços <br />
               <span className="italic text-[var(--color-gold)]">
-                Diagnósticos
+                Avaliação Psicológica e Neuropsicológica
               </span>
             </motion.h2>
           </div>
@@ -49,8 +56,9 @@ export default function Diagnostics() {
             whileInView={{ opacity: 1 }}
             className="text-[var(--color-deep-blue)]/60 max-w-xs text-sm leading-relaxed font-light border-l border-[var(--color-gold)]/30 pl-6"
           >
-            Investigação clínica detalhada para auxiliar no fechamento de
-            diagnósticos complexos e direcionamento terapêutico.
+            Investigação detalhada, com uso de instrumentos validados,
+            auxiliando no psicodiagnóstico e no encaminhamento para
+            procedimentos cirúrgicos.
           </motion.p>
         </div>
 

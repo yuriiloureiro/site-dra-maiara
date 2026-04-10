@@ -26,15 +26,18 @@ export default function CallToAction() {
             className="text-4xl md:text-6xl font-light mb-8 leading-tight text-white"
             style={{ fontFamily: "serif" } as any}
           >
-            Clareza e segurança para o seu <br />
+            Direcionamento para o seu <br />
             <span className="italic text-[var(--color-gold)]">
               próximo passo.
             </span>
           </h2>
 
           <p className="text-lg md:text-xl text-white/80 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
-            Agende sua avaliação e obtenha um direcionamento técnico e
-            humanizado para a sua jornada de compreensão e equilíbrio.
+            Agende sua avaliação e compreenda, de forma técnica e acolhedora, os
+            aspectos que influenciam o seu funcionamento emocional, cognitivo e
+            comportamental, com direcionamento para compreensão do seu caso e
+            apoio à tomada de decisão em intervenções psicológicas, médicas e/ou
+            cirúrgicas.
           </p>
 
           <motion.a
